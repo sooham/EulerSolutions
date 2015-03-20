@@ -123,3 +123,17 @@ def sum_till(n):
     # find the result using the geometric series.
     return int((n + 1) * n / 2)
 
+def find_nth_prime(n):
+    """ (int) -> int
+    Returns the n-th prime number
+    """
+    # The n-th prime is approximately located around the number m
+    # when n * ln(n) + n*ln(ln(n)) forall n <= 6
+    upper_bound = math.ceil(n * math.log(n) + n * math.log(math.log(n)))
+    # use seive on the range [1, upper_bound]
+    primes_found = 0
+    for prime in soe(upper_bound):
+        primes_found += 1
+        if primes_found == n:
+            return prime
+
