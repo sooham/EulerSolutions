@@ -107,4 +107,19 @@ def lcm(lst):
             print(final_list)
     return final_list[0]
 
+def sum_of_squares_till(n):
+    """ (int) -> int
+    Returns the sum of the squares of the all numbers from 1 to n.
+    Precondition: n >= 1
+    """
+    # find the result using the sum of squares telescoping series
+    return int(n * (n + 1) * (2 * n + 1) / 6)
+
+def sum_till(n):
+    """ (int) -> int
+    Return the sum of all numbers from 1 to n.
+    Precondition: n >= 1
+    """
+    # find the result using the geometric series.
+    return int((n + 1) * n / 2)
 
