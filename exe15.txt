@@ -1,0 +1,7 @@
+Simple observation and combinatorics show there is a
+relationship bwtween the binomial coefficients and the
+general solutions to an n by n size grid.
+
+Namely, that the number of paths direct from the top-left
+to the bottom right corner for an n by n grid will be 
+(2n)!/(n! * n!). Plugging in 20 gives the answer.
