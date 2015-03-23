@@ -56,7 +56,7 @@ def factorise(n, res= None):
     '''
 
     if n <= 1:
-        return None
+        return {}
 
     # we can put an upper limit to the number of numbers we need to check for
     # factorisation with, as the quotient of the number will also be evaluated
